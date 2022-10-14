@@ -1,0 +1,26 @@
+// Common styles of the project
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-overflow-scrolling: touch;
+    & > * {
+        flex-shrink: 0;
+    }
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
